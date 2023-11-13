@@ -152,10 +152,13 @@ header{
 nav{
     display: inline;
 }
-
 .breadcrumb a{
     color: #ffff;
 }
+.show-btn{
+    display: none;
+}
+
 
 /*Stili elementi centrali*/
 
@@ -185,9 +188,13 @@ nav{
 .show-table{
     display: none;
 }
+.show-form{
+    display: none;
+}
 .card-body a{
     color: #1b72e8;
 }
+
 
 
 
@@ -218,7 +225,7 @@ nav{
         display: inline-block;
     }
     #sideBar{
-        width: 150px;
+        width: 30rem;
     }
     #sideBar span{
         display: inline-block;   
@@ -234,5 +241,11 @@ nav{
     }
     .show-table{
         display: table-cell;
+    }
+    .show-btn{
+        display: inline-block;
+    }
+    .show-form{
+        display: block;
     }
 }
