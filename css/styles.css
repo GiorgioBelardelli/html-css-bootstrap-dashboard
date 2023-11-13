@@ -21,10 +21,15 @@
 }
 
 #sideBar{
+    text-align: center;
     width: 80px;
     height: 100%;
     background-image: url("../img/sidebar-bg.png");
     background-color: #051e34;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 .5rem;
 }
 
 .top-margin{
@@ -98,16 +103,91 @@ header{
 
 /*STILI SIDEBAR*/
 
-#sidebar i, span{
+
+#sideBar a{
+    color: #ffff;
+    font-size: 1.2rem;
+    display: block;
+    padding: .6rem 0;
+}
+
+#sideBar a:hover{
+    background-color: #a0a0a0;
+    transition-duration: .3s;
+}
+
+.show-span{
+    display: none;
+    color: #ffff;
+    margin-left: .5rem;
+}
+
+/*STILI MAIN CONTENT*/
+
+/*stili container blu*/
+
+.blue-container{
+    background-color: #1b72e8;
+    color: #ffff;
+}
+.student-btn{
+    border-color: #ffff;
+    color: #ffff ;
+    margin-left: 1rem;
+}
+.offcanvas-end{
+    width: 100%;
+}
+.breadcrumb-style{
+    color: #ffff;
+    background-color: #165bba;
+    border: 0;
+    border-radius: 20px;
+    padding: 0rem .3rem .2rem .3rem;
+    display: inline;
+}
+.breadcrumbContainer{
+    display: none;
+}
+nav{
+    display: inline;
+}
+
+.breadcrumb a{
     color: #ffff;
 }
 
-.sidebar-admin{
-   
+/*Stili elementi centrali*/
+
+.btn-table{
+    color: gray;
+    border: 1px solid gray;
 }
-
-
-
+.table{
+    background-color: #ffff;
+}
+.table-col{
+    border: 1px solid #dedede;
+    border-radius: 10px;
+}
+.title-head{
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dedede;
+    padding: 0rem .3rem 1.3rem .3rem;
+}
+.table-col .fa-code{
+    color: #ffff;
+    background-color: #f26551;
+    border-radius: 50%;
+    padding: .3rem .2rem;
+    margin-right: .5rem;
+}
+.show-table{
+    display: none;
+}
+.card-body a{
+    color: #1b72e8;
+}
 
 
 
@@ -136,5 +216,23 @@ header{
     }
     .container-i{
         display: inline-block;
+    }
+    #sideBar{
+        width: 150px;
+    }
+    #sideBar span{
+        display: inline-block;   
+    }
+    .breadcrumbContainer{
+        display: inline-block;
+    }
+    .breadcrumb-plus{
+        display: none;
+    }
+    .offcanvas-end{
+        width: 40rem;
+    }
+    .show-table{
+        display: table-cell;
     }
 }
