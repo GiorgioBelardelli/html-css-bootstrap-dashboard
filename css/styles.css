@@ -248,4 +248,7 @@ nav{
     .show-form{
         display: block;
     }
+    .negative-margin{
+        margin-top: -21rem;
+    }
 }
